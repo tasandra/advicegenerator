@@ -18,6 +18,10 @@ function App() {
     }
   };
 
+  const refreshPage = ()=>{
+    window.location.reload();
+ }
+
   return (
     <div className="container">
       <h3>
@@ -33,9 +37,9 @@ function App() {
         </picture>
       </div>
       <div className="icon">
-        <a href="reload">
+        <button onClick={refreshPage}>
           <img src="/images/icon-dice.svg" alt="icon" />
-        </a>
+        </button>
       </div>
     </div>
   );
