@@ -27,9 +27,10 @@ function App() {
 
       <blockquote>{data ? <q>{data.slip.advice}</q> : <q>Loading data...</q>}</blockquote>
       <div className="divider">
-        <span className="line"></span>
-        <img src="/images/pattern-divider-desktop.svg" alt="divider" />
-        <span className="line"></span>
+        <picture>
+          <source media="(max-width: 618px)" srcset="/images/pattern-divider-mobile.svg" />
+          <img src="/images/pattern-divider-desktop.svg" alt="divider" />
+        </picture>
       </div>
       <div className="icon">
         <a href="reload">
